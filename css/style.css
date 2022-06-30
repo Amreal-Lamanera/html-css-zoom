@@ -87,21 +87,31 @@ span {
     font-size: 12px;
 }
 
-.nav-list,
-.end p {
-    padding: 15px 20px;
+.nav-list {
+    padding: 15px 0;
 }
 
-.nav-list * {
-    padding-right: 15px;
+.nav-list:first-child {
+    padding-left: 15px;
+}
+
+.nav-list.flex {
+    gap: 15px;
 }
 
 .nav-list>* {
     cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+
+.nav-list>*:hover {
+    background-color: var(--light-grey);
+    transform: scale(1.5);
 }
 
 li.flex {
     align-items: center;
+    gap: 15px;
 }
 
 .nav__button.flex {
@@ -115,6 +125,7 @@ li.flex {
 }
 
 .end p {
+    padding: 0 15px;
     color: red;
     align-self: stretch;
     background-color: var(--light-grey);
