@@ -31,7 +31,7 @@ body {
 /* Section Main container */
 .main-container {
     flex-grow: 1;
-    padding: 60px 80px 30px;
+    padding: 70px 80px 30px;
     overflow: auto;
     /* Sotto i 900px invece di rompersi il layout si crea una scroll bar orizzontale */
     /* min-width: 900px; */
