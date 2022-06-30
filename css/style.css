@@ -8,6 +8,8 @@
 * {
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .flex {
@@ -45,7 +47,9 @@ body {
 }
 
 .cam-management>* {
-    background-color: var(--light-grey);
+    background-color: rgba(232, 232, 232, 0.5);
+    padding: 5px 5px;
+    border-radius: 5px;
 }
 
 .grid-7 {
@@ -76,15 +80,11 @@ body {
     overflow: auto;
 }
 
-.main-nav span {
-    white-space: nowrap;
-}
-
 .main-nav i:not(.fa-chevron-up) {
     font-size: 25px;
 }
 
-.main-nav span {
+span {
     font-size: 12px;
 }
 
