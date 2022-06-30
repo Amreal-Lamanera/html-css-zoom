@@ -4,20 +4,57 @@
     --grey: #222222
 }
 
+* {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Main */
+
 .zoom-main {
     background-color: #000;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
 }
 
+/* Section Main container */
 .main-container {
     flex-grow: 1;
 }
 
+/* Nav Main nav */
+
 .main-nav {
     background-color: var(--grey);
+    justify-content: space-between;
 }
+
+.main-nav i:not(.fa-chevron-up) {
+    font-size: 30px;
+}
+
+.mic-cam * {
+    padding-right: 15px;
+}
+
+.mic-cam>* {
+    cursor: pointer;
+}
+
+li.flex {
+    align-items: center;
+}
+
+.mic.flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+
 
 /* TODO: debug */
 
