@@ -120,6 +120,7 @@ li.flex {
     background-color: var(--light-grey);
     height: 100%;
     align-items: center;
+    cursor: pointer;
 }
 
 
