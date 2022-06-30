@@ -27,6 +27,8 @@
     flex-grow: 1;
     padding: 75px 85px 30px;
     overflow: auto;
+    /* Sotto i 900px invece di rompersi il layout si crea una scroll bar orizzontale */
+    min-width: 900px;
 }
 
 .grid-7 {
@@ -40,11 +42,15 @@
     position: relative;
 }
 
+/* .cam img {
+    min-width: 100px;
+} */
+
 .user {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(232, 232, 232, 0.5);
 }
 
 /* Nav Main nav */
