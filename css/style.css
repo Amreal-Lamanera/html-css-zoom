@@ -1,11 +1,13 @@
 /* Regole Generali */
 
 :root {
-    --grey: #222222
+    --grey: #222222;
+    --light-grey: #4A4A4A;
 }
 
 * {
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .flex {
@@ -27,20 +29,30 @@
 
 /* Nav Main nav */
 
-.main-nav {
+.main-nav.flex {
     background-color: var(--grey);
     justify-content: space-between;
+    overflow: auto;
+}
+
+.main-nav span {
+    white-space: nowrap;
 }
 
 .main-nav i:not(.fa-chevron-up) {
     font-size: 30px;
 }
 
-.mic-cam * {
+.nav-list,
+.end p {
+    padding: 15px 20px;
+}
+
+.nav-list * {
     padding-right: 15px;
 }
 
-.mic-cam>* {
+.nav-list>* {
     cursor: pointer;
 }
 
@@ -48,17 +60,28 @@ li.flex {
     align-items: center;
 }
 
-.mic.flex {
+.nav__button.flex {
     flex-direction: column;
     gap: 10px;
     text-align: center;
 }
 
+.active {
+    color: #48C800;
+}
+
+.end p {
+    color: red;
+    align-self: stretch;
+    background-color: var(--light-grey);
+    height: 100%;
+    align-items: center;
+}
 
 
 /* TODO: debug */
 
 .debug .main-nav {
-    padding: 50px;
+    /* padding: 50px; */
     border: 5px solid seagreen;
 }
