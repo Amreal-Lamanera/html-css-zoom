@@ -1,3 +1,27 @@
 /* Regole Generali */
 
-:root {}
+:root {
+    --grey: #222222
+}
+
+.zoom-main {
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.main-nav {
+    background-color: var(--grey);
+}
+
+/* TODO: debug */
+
+.debug .main-nav {
+    padding: 50px;
+    border: 5px solid seagreen;
+}
