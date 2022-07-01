@@ -24,7 +24,6 @@ body {
 
 .zoom-main {
     height: 100vh;
-    width: 100%;
     flex-direction: column;
 }
 
@@ -37,6 +36,8 @@ body {
     /* min-width: 900px; */
     /* Non posso impostarlo perché rompe il layout ancora peggio se zoommo */
     position: relative;
+    /* flex-direction: column;
+    justify-content: center; */
 }
 
 .cam-management {
@@ -55,13 +56,16 @@ body {
 
 .grid-7 {
     display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
+    /* grid-template-columns: repeat(7, minmax(0, 1fr)); */
+    grid-template-columns: repeat(auto-fill, 240px);
+    justify-content: center;
     row-gap: 5px;
     column-gap: 10px;
 }
 
 .cam {
     position: relative;
+    aspect-ratio: 16/9;
 }
 
 .user {
@@ -127,7 +131,6 @@ li.flex {
 .end p {
     padding: 0 15px;
     color: red;
-    align-self: stretch;
     background-color: var(--light-grey);
     height: 100%;
     align-items: center;
